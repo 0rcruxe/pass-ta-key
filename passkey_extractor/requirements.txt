@@ -1,0 +1,3 @@
+cryptography==42.0.8
+protobuf==5.28.3
+dfindexeddb[plugins]==20260210
