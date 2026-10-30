@@ -7,7 +7,7 @@
 
 </div>
 
-This tool is the PoC implementation for the **Pass-ta-key Golden Attack**, a new method for extracting the **Security Domain Secret (SDS)** of Google Password Manager from Chrome process memory, parsing the locally stored `WebauthnCredentialSpecifics` records for each **GPM passkey**, and decrypting the ECDSA P-256 private keys of synced passkeys using the extracted SDS.
+This tool is the PoC implementation for the **Pass-ta-key Golden Attack**, a new method for extracting the **Security Domain Secret (SDS)** of **Google Password Manager (GPM)** from Chrome process memory, parsing the locally stored `WebauthnCredentialSpecifics` records for each GPM passkey, and decrypting the ECDSA P-256 private keys of synced passkeys using the extracted SDS.
 
 **Affected Versions:** Because this vulnerability exploits an architectural flaw, all versions of Chrome across all release channels (Stable, Beta, Dev, and Canary) are affected.
 
@@ -20,7 +20,7 @@ For the full technical analysis, refer to my blog post: https://0rcruxe.github.i
 
 ---
 
-## SDS Extraction
+## Security Domain Secret Extraction
 
 Extract the SDS from Chrome process memory during device onboarding to the enclave security domain by capturing CBOR buffers.
 
@@ -93,17 +93,17 @@ Target a specific Google account by editing the Chrome profile paths inside the 
 
 [+] Done. SDS successfully extracted. Exiting.
 ```
-### Demo
+### Demonstration
 
 https://github.com/user-attachments/assets/883fd09b-8065-4501-8176-3c1280da202b
 
 ---
 
-## GPM Passkey Extraction and Decryption
+## Google Password Manager Passkey Extraction and Decryption
 
 Parses the LevelDB database directory stored at `/Sync Data/LevelDB` within a Chrome profile, extracts the `WebauthnCredentialSpecifics` records, and decrypts the GPM passkeys’ ECDSA P-256 private keys using the extracted SDS.
 
-### Install
+### Installation
 
 ```bash
 pip install -r requirements.txt
