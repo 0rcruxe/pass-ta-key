@@ -5,7 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![PoC](https://img.shields.io/badge/type-PoC-red.svg)
 
-<img src="assets/illus.png" alt="illus" width="850">
+<img src="assets/illus.png" alt="illus" width="780">
 
 </div>
 
