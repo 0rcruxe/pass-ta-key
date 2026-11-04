@@ -5,6 +5,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![PoC](https://img.shields.io/badge/type-PoC-red.svg)
 
+![illus](assets/illus.png)
+
 </div>
 
 This tool is the PoC implementation for the **Pass-ta-key Golden Attack**, a new method for extracting the **Security Domain Secret (SDS)** of **Google Password Manager (GPM)** from Chrome process memory, parsing the locally stored `WebauthnCredentialSpecifics` records for each GPM passkey, and decrypting the ECDSA P-256 private keys of synced passkeys using the extracted SDS.
