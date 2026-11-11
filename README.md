@@ -13,7 +13,7 @@
 
 This tool is the PoC implementation for the **Pass-ta-key Golden Attack**, a new method for extracting the **Security Domain Secret (SDS)** of **Google Password Manager (GPM)** from Chrome process memory, parsing the locally stored `WebauthnCredentialSpecifics` records for each GPM passkey, and decrypting the ECDSA P-256 private keys of synced passkeys using the extracted SDS.
 
-**Affected Versions:** Because this vulnerability exploits an architectural flaw, it affects all versions of Chrome from 129 onward, starting with the introduction of native Google Password Manager passkeys on Chrome Desktop. This applies across all release channels, including Stable, Beta, Dev, and Canary.
+**Affected Versions:** Because this vulnerability exploits an architectural flaw, it affects all versions of Chrome from 129 onward, starting with the introduction of native GPM passkeys on Chrome Desktop. This applies across all release channels, including Stable, Beta, Dev, and Canary.
 
 For the full technical analysis, refer to my blog post: https://0rcruxe.github.io/posts/pass-ta-key-golden-attack-sds-extraction/
 
